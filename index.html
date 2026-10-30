@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Gambopat Engineering & Training Center | Welding & Fabrication in Ashaiman</title>
+        <meta name="description" content="Gambopat Engineering & Training Center offers professional welding, fabrication, gates, doors, windows and apprenticeship training in Ashaiman, Zenu, Peaceland, Ghana.">
+        <meta name="keywords" content="Gambopat Engineering,welding in Ashaiman, metal fabrication Ghana, gates and doors welding, welding training center Ghana">
+        <meta name="author" content="Gambopat Engineering & Training Center">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="canonical" href="https://gambopat.com/">
+        
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Gambopat Engineering & Training Center | Welding & Fabrication in Ashaiman">
+        <meta property="og:description" content="Gambopat Engineering & Training Center offers professional welding, fabrication, gates, doors, windows and apprenticeship training in Ashaiman, Zenu, Peaceland, Ghana.">
+        <meta property="og:url" content="https://www.gambopat.com">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Gambopat Engineering & Training Center">
+        <meta property="og:image" content="web-app-manifest-512x512.png">
+        
+        <link rel="icon" href="favicon.ico" sizes="any">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="manifest" href="site.webmanifest">
+        
+        <script type="application/ld+json">
+        {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gambopat Engineering & Training Center","url":"https://www.gambopat.com","telephone":"+233243265708","image":"https://www.gambopat.com/web-app-manifest-512x512.png","description":"Welding, metal fabrication and apprenticeship training in Ashaiman, Ghana.","address":{"@type":"PostalAddress","streetAddress":"Zenu, Peaceland, Falcon Academy","addressLocality":"Ashaiman","addressCountry":"GH"},"areaServed":"Greater Accra, Ghana","hasMap":"https://maps.app.goo.gl/LDmtNmfUc1ethCu28","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Main gates fabrication"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Security doors and windows"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Staircases and balustrades"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Metal furniture"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Welding apprenticeship training"}}]}
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="hed-f">
+                <img src="favicon-96x96.png" alt="Logo">
+                <span class="gg">GAMBOPAT</span>
+            </div>
+        
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <nav id="nav-links" class="nav">
+                <a href="main-gates.html">Gates</a>
+                <a href="window.html">Windows</a>
+                <a href="security-door.html">Doors</a>
+                <a href="staircase.html">Staircase</a>
+                <a href="balustrades.html">Balustrades</a>
+                <a href="chairs-tables.html">Furniture</a>
+                <a href="training.html">Training</a>
+                <a href="about.html">About</a>
+                <a href="quote.html">Get a Quote</a>
+                <a href="https://wa.me/233243265708" class="cta">Chat Now</a>
+            </nav>
+            <button class="settings-btn" onclick="toggleSettings()">⚙️</button>
+            <div class="settings-menu" id="settingsMenu">
+                <label style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="lightMode" onchange="toggleLightMode()">
+                    Light Mode
+                </label>
+                <button class="close-settings" onclick="toggleSettings()" style="margin-top: 10px; width: 100%; padding: 8px; background: var(--gold); border: none; color: #111; font-weight: bold; border-radius: 5px;">Apply</button>
+            </div>
+        </header>
+
+        <section class="hero-section">
+            <h1>WHERE ALL METALS SURRENDER</h1>
+            <p>Premium craftsmanship in welding, fabrication, and structural engineering. Browse our latest custom designs directly from the workshop.</p>
+            
+            <div class="category-filters">
+                <button class="filter-btn active-filter" data-category="gates">Main Gates</button>
+                <button class="filter-btn" data-category="windows">Windows</button>
+                <button class="filter-btn" data-category="doors">Doors</button>
+                <button class="filter-btn" data-category="staircases">Staircases</button>
+                <button class="filter-btn" data-category="balustrades">Balustrades</button>
+                <button class="filter-btn" data-category="furniture">Furniture</button>
+            </div>
+
+            <div class="slider-container">
+                <button class="slide-btn prev-btn" onclick="slideLeft()">❮</button>
+                <div id="live-preview-slider" class="slider-wrapper">
+                    <p style="color: var(--text-muted); width: 100%; text-align: center; padding: 50px 0;">Connecting to showroom...</p>
+                </div>
+                <button class="slide-btn next-btn" onclick="slideRight()">❯</button>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>ABOUT GAMBOPAT ENGINEERING</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content">
+                    At Gambopat Engineering & Training Center, we specialize in precision light welding solutions that combine quality, efficiency, and innovation. Whether it's custom fabrication, repairs, or industrial projects, our skilled engineers deliver work you can rely on.<br><br>
+                    We also empower the next generation of engineers through hands-on apprenticeship training programs designed to turn skills into mastery.
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>VISIT OUR WORKSHOP</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content">
+                    We are strategically located at <strong><a style="color: var(--gold); text-decoration: none;" href="https://maps.app.goo.gl/LDmtNmfUc1ethCu28" target="_blank">Ashaiman, Zenu, Peaceland, Falcon Academy</a></strong>.<br><br>
+                    We primarily forge with high-grade Galvanised Metals and Mild Steel to ensure maximum durability and rust resistance across all weather conditions.
+                    <iframe class="map-embed" loading="lazy" title="Gambopat workshop location" src="https://maps.google.com/maps?q=Falcon%20Academy%20Zenu%20Peaceland%20Ashaiman%20Ghana&output=embed"></iframe>
+                    <br><a href="tel:+233243265708" style="color:var(--gold)">Call: +233243265708</a>
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>HIRE US TODAY</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content" style="text-align: center;">
+                    <p>Ready to secure your property with premium metalwork?</p>
+                    <a href="https://wa.me/233243265708" style="display: inline-block; background: var(--accent-green); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 10px;">Contact on WhatsApp</a>
+                    <br><br>
+                    <a href="tel:+233243265708" style="color: var(--text-main); text-decoration: none;">Or Call: +233243265708</a>
+                </div>
+            </div>
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>OUR SERVICES</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content">
+                    Main gates, security doors, windows, staircases, balustrades, metal furniture, repairs and custom fabrication for homes and businesses in Ashaiman and across Greater Accra.<br><br><a href="quote.html" class="btn-gold">Request a Quote</a>
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>TRAINING &amp; APPRENTICESHIP</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content">
+                    Learn welding and metal fabrication hands-on in our workshop and turn your skill into a career.<br><br><a href="training.html" class="btn-gold">See Training Details</a>
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>HOW IT WORKS</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content">
+                    <strong>1.</strong> Enquire with a photo or measurements &nbsp; <strong>2.</strong> Get a quotation &nbsp; <strong>3.</strong> We fabricate &nbsp; <strong>4.</strong> Delivery and installation.<br><br><a href="about.html" style="color:var(--gold)">More about our process</a>
+                </div>
+            </div>
+
+            <div class="accordion-box">
+                <div class="accordion-header">
+                    <span>FREQUENTLY ASKED QUESTIONS</span>
+                    <span class="indicator">➕</span>
+                </div>
+                <div class="accordion-content">
+                    <p><strong>How do I get a price?</strong><br>Send photos or measurements on WhatsApp or use our <a href="quote.html" style="color:var(--gold)">quote form</a>. We reply with a quotation after confirming the design and size.</p><br>
+                    <p><strong>Do you deliver and install?</strong><br>Yes, tell us your location in the quote request and we will confirm delivery and installation.</p><br>
+                    <p><strong>Can you copy a design I saw somewhere?</strong><br>Yes. Send us a photo and we will fabricate something similar to your measurements.</p><br>
+                    <p><strong>What materials do you use?</strong><br>High-grade galvanised metals and mild steel, chosen for durability and rust resistance.</p><br>
+                    <p><strong>Do you train beginners?</strong><br>Yes. See our <a href="training.html" style="color:var(--gold)">training and apprenticeship page</a>.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="image-viewer" id="previewImageViewer">
+            <span class="close-btn" id="closePreviewViewer">×</span>
+            <img id="previewFullImage" alt="Fullscreen View">
+        </div>
+
+        <footer>
+            <p>© 2026 GAMBOPAT ENGINEERING & TRAINING CENTER | Crafted to Last</p>
+        </footer>
+
+        <script>
+            function toggleMenu() { document.getElementById("nav-links").classList.toggle("show"); }
+            function toggleSettings() { document.getElementById('settingsMenu').classList.toggle('active'); }
+            
+            function toggleLightMode() {
+                document.body.classList.toggle('light-theme');
+                localStorage.setItem('lightTheme', document.body.classList.contains('light-theme'));
+            }
+
+            const slider = document.getElementById('live-preview-slider');
+            const scrollAmount = 300;
+
+            function slideLeft() { slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' }); resetAutoSlide(); }
+            function slideRight() { slider.scrollBy({ left: scrollAmount, behavior: 'smooth' }); resetAutoSlide(); }
+
+            let slideInterval;
+            function startAutoSlide() {
+                slideInterval = setInterval(() => {
+                    if (!slider) return;
+                    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
+                        slider.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                }, 3500);
+            }
+
+            function resetAutoSlide() { clearInterval(slideInterval); startAutoSlide(); }
+
+            window.addEventListener("DOMContentLoaded", () => {
+                if (localStorage.getItem('lightTheme') === 'true') {
+                    document.body.classList.add('light-theme');
+                    const lightModeCheckbox = document.getElementById('lightMode');
+                    if (lightModeCheckbox) lightModeCheckbox.checked = true;
+                }
+
+                document.querySelectorAll('.accordion-header').forEach((header) => {
+                    header.addEventListener('click', () => {
+                        const content = header.nextElementSibling;
+                        const indicator = header.querySelector('.indicator');
+                        
+                        if (content.style.display === 'block') {
+                            content.style.display = 'none';
+                            indicator.innerText = '➕';
+                            header.style.color = 'var(--gold)';
+                        } else {
+                            content.style.display = 'block';
+                            indicator.innerText = '➖';
+                            header.style.color = 'var(--text-main)';
+                        }
+                    });
+                });
+
+                startAutoSlide();
+                slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+                slider.addEventListener('mouseleave', startAutoSlide);
+            });
+        </script>
+
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+            import { getFirestore, collection, onSnapshot, updateDoc, doc, increment } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyCzbU6d1wh6sezdM1ixhQrA-TCVCHpm-AA",
+                authDomain: "gambopat-327be.firebaseapp.com",
+                projectId: "gambopat-327be",
+                storageBucket: "gambopat-327be.firebasestorage.app",
+                messagingSenderId: "334515883953",
+                appId: "1:334515883953:web:3cd35ada86b25770a53790"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            let activeSnapshotUnsubscribe = null;
+            let targetCollectionForTracking = 'gates';
+
+            function streamShowcaseGallery(targetCollection) {
+                targetCollectionForTracking = targetCollection;
+                const sliderWrapper = document.getElementById('live-preview-slider');
+                if (!sliderWrapper) return;
+
+                sliderWrapper.innerHTML = "<p style='color: var(--text-muted); width: 100%; text-align: center; padding: 50px 0;'>Fetching premium designs...</p>";
+
+                if (activeSnapshotUnsubscribe) activeSnapshotUnsubscribe();
+
+                activeSnapshotUnsubscribe = onSnapshot(collection(db, targetCollection), (snapshot) => {
+                    sliderWrapper.innerHTML = "";
+                    sliderWrapper.scrollLeft = 0;
+                    
+                    if (snapshot.empty) {
+                        sliderWrapper.innerHTML = "<p style='color: var(--text-muted); width: 100%; text-align: center; padding: 50px 0;'>New designs coming soon.</p>";
+                        return;
+                    }
+
+                    const docs = snapshot.docs.sort((a, b) => {
+                        const aData = a.data();
+                        const bData = b.data();
+                        const aTime = typeof aData.createdAt?.toMillis === 'function' ? aData.createdAt.toMillis() : Number(aData.createdAt || 0);
+                        const bTime = typeof bData.createdAt?.toMillis === 'function' ? bData.createdAt.toMillis() : Number(bData.createdAt || 0);
+                        return bTime - aTime;
+                    });
+
+                    docs.forEach((doc) => {
+                        const fileData = doc.data();
+                        const safeTitle = String(fileData.name || "Design").replace(/'/g, "\\'");
+                        const displayUrl = fileData.imageUrl && fileData.imageUrl.includes('res.cloudinary.com') ? fileData.imageUrl.replace('/upload/', '/upload/f_auto,q_auto,w_1200/') : fileData.imageUrl;
+
+                        const designCard = document.createElement('div');
+                        designCard.className = 'card';
+                        designCard.dataset.id = doc.id;
+
+                        designCard.innerHTML = `
+                            <div style="overflow: hidden;">
+                                <img loading="lazy" src="${displayUrl}" class="product-img launch-home-viewer" alt="${fileData.name || 'Design'}">
+                            </div>
+                            <div class="card-info">
+                                <p>${fileData.name || 'Untitled design'}</p>
+                                <button class="action-order-whatsapp" data-name="${safeTitle}" data-url="${fileData.imageUrl}">
+                                    Enquire Now
+                                </button>
+                            </div>
+                        `;
+                        sliderWrapper.appendChild(designCard);
+                    });
+                }, (error) => {
+                    sliderWrapper.innerHTML = "<p style='color: #ff4d4d; width: 100%; text-align: center;'>Error syncing with server.</p>";
+                });
+            }
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const filters = document.querySelectorAll('.filter-btn');
+                
+                filters.forEach(button => {
+                    button.addEventListener('click', () => {
+                        filters.forEach(btn => btn.classList.remove('active-filter'));
+                        button.classList.add('active-filter');
+                        const targetCollectionId = button.getAttribute('data-category');
+                        streamShowcaseGallery(targetCollectionId);
+                    });
+                });
+
+                streamShowcaseGallery('gates');
+
+                document.getElementById('live-preview-slider').addEventListener('click', (e) => {
+                    if (e.target.classList.contains('action-order-whatsapp')) {
+                        const docId = e.target.closest('.card')?.dataset.id;
+                        if (docId) updateDoc(doc(db, targetCollectionForTracking || 'gates', docId), { enquiries: increment(1) }).catch(()=>{});
+                        const productName = e.target.getAttribute('data-name');
+                        const productUrl = e.target.getAttribute('data-url');
+                        const phoneString = "233243265708";
+                        const completeMessage = `Hello Gambopat Engineering! I am interested in this premium design: ${productName}. Reference image: ${productUrl}`;
+                        window.open(`https://wa.me/${phoneString}?text=${encodeURIComponent(completeMessage)}`, "_blank");
+                    }
+                });
+
+                const previewViewer = document.getElementById('previewImageViewer');
+                const fullDisplayImage = document.getElementById('previewFullImage');
+                let lightboxZoomActive = false;
+
+                document.body.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('launch-home-viewer')) {
+                        const cardId = e.target.closest('.card')?.dataset.id;
+                        if (cardId) updateDoc(doc(db, targetCollectionForTracking, cardId), { views: increment(1) }).catch(()=>{});
+                        previewViewer.style.display = 'flex';
+                        fullDisplayImage.src = e.target.src;
+                        fullDisplayImage.style.transform = 'scale(1)';
+                        fullDisplayImage.style.cursor = 'zoom-in';
+                        lightboxZoomActive = false;
+                    }
+                });
+
+                document.getElementById('closePreviewViewer').addEventListener('click', () => {
+                    previewViewer.style.display = 'none';
+                });
+
+                fullDisplayImage.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (!lightboxZoomActive) {
+                        fullDisplayImage.style.transform = "scale(1.8)";
+                        fullDisplayImage.style.cursor = "zoom-out";
+                        lightboxZoomActive = true;
+                    } else {
+                        fullDisplayImage.style.transform = "scale(1)";
+                        fullDisplayImage.style.cursor = "zoom-in";
+                        lightboxZoomActive = false;
+                    }
+                });
+            });
+        </script>
+    <script src="site-extras.js" defer></script>
+    </body>
+</html>
